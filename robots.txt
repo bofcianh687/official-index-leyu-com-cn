@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://bofcianh687.github.io/official-index-leyu-com-cn/sitemap.xml
