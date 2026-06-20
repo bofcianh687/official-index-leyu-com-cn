@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>宝威体育 · 知识库</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Noto Sans SC', sans-serif;
+      background: #f8f9fa;
+      color: #1e1e1e;
+      line-height: 1.7;
+      padding: 2rem 1.25rem;
+    }
+    .page {
+      max-width: 720px;
+      margin: 0 auto;
+    }
+
+    /* 标题层级 — 极简留白 */
+    h1 {
+      font-size: 2rem;
+      font-weight: 550;
+      letter-spacing: -0.02em;
+      margin-bottom: 0.2em;
+      color: #0c0c0c;
+    }
+    h2 {
+      font-size: 1.35rem;
+      font-weight: 520;
+      margin: 2.2rem 0 0.8rem 0;
+      padding-bottom: 0.25rem;
+      border-bottom: 2px solid #e0e4e8;
+      color: #1f2937;
+    }
+    h3 {
+      font-size: 1.1rem;
+      font-weight: 500;
+      margin: 1.6rem 0 0.4rem 0;
+      color: #2c3e50;
+    }
+
+    p, li {
+      font-size: 1rem;
+      color: #2c2c2c;
+      margin-bottom: 0.8rem;
+    }
+    a {
+      color: #1a4e8a;
+      text-decoration: none;
+      border-bottom: 1px solid transparent;
+      transition: border 0.15s;
+    }
+    a:hover {
+      border-bottom-color: #1a4e8a;
+    }
+
+    /* 卡片 / 区块 */
+    .info-card {
+      background: #ffffff;
+      border-radius: 16px;
+      padding: 1.5rem 1.8rem;
+      margin: 1.8rem 0;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.02), 0 1px 4px rgba(0,0,0,0.03);
+      border: 1px solid #edf0f5;
+    }
+
+    .notice-block {
+      background: #f0f4fa;
+      padding: 1rem 1.5rem;
+      border-radius: 12px;
+      border-left: 4px solid #1a4e8a;
+      margin: 1.5rem 0;
+    }
+
+    .faq-item {
+      margin-bottom: 1.2rem;
+    }
+    .faq-item strong {
+      display: block;
+      font-weight: 550;
+      margin-bottom: 0.2rem;
+      color: #1f2937;
+    }
+
+    .dir-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+      margin: 1.2rem 0 0.2rem 0;
+    }
+    .dir-item {
+      background: #ffffff;
+      border: 1px solid #e6eaef;
+      border-radius: 14px;
+      padding: 1rem 1.2rem;
+      transition: all 0.1s;
+    }
+    .dir-item:hover {
+      background: #f3f7fc;
+      border-color: #b8c8dd;
+    }
+    .dir-item .label {
+      font-weight: 500;
+      font-size: 0.95rem;
+      color: #15406b;
+      margin-bottom: 0.2rem;
+    }
+    .dir-item .desc {
+      font-size: 0.85rem;
+      color: #546e7a;
+    }
+
+    hr {
+      border: none;
+      border-top: 1px solid #dfe5ec;
+      margin: 2rem 0;
+    }
+
+    .footer-note {
+      margin-top: 3rem;
+      font-size: 0.85rem;
+      color: #6c7a8a;
+      padding: 0.5rem 0 1.5rem 0;
+      border-top: 1px solid #e2e8f0;
+    }
+
+    /* 响应式 */
+    @media (max-width: 540px) {
+      body { padding: 1.2rem 1rem; }
+      h1 { font-size: 1.6rem; }
+      .dir-grid { grid-template-columns: 1fr; }
+      .info-card { padding: 1.2rem; }
+    }
+
+    /* 目录感觉的hr/分割 */
+    .section-divider {
+      margin: 0.5rem 0 1.8rem 0;
+      height: 1px;
+      background: linear-gradient(90deg, #ccd7e6, transparent);
+    }
+  </style>
+</head>
+<body>
+<div class="page">
+  
+  <!-- 主标题 / hero 极简 -->
+  <h1>宝威体育 · 知识索引</h1>
+  <p style="color: #4b5b6a; margin-bottom: 0.6rem; font-size: 1.05rem;">
+    围绕体育信息、运动常识与平台相关说明整理的内容页，方便快速浏览和查阅。
+  </p>
+  <div class="section-divider"></div>
+
+  <!-- 目录感：信息卡片区 -->
+  <div class="info-card">
+    <div style="display: flex; align-items: center; gap: 0.4rem; margin-bottom: 0.8rem;">
+      <span style="font-weight: 500; letter-spacing: 0.3px;">📋 内容目录</span>
+      <span style="font-size: 0.8rem; color: #6f7d8f;">快速定位</span>
+    </div>
+    <div class="dir-grid">
+      <div class="dir-item">
+        <div class="label">📌 背景与定位</div>
+        <div class="desc">平台主题 · 体育信息服务</div>
+      </div>
+      <div class="dir-item">
+        <div class="label">🏅 常见场景</div>
+        <div class="desc">赛事资讯 · 运动知识</div>
+      </div>
+      <div class="dir-item">
+        <div class="label">📖 说明与提示</div>
+        <div class="desc">使用参考 · 注意事项</div>
+      </div>
+      <div class="dir-item">
+        <div class="label">❓ 简短 FAQ</div>
+        <div class="desc">常见问题摘要</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 介绍 / 背景 -->
+  <h2>关于宝威体育</h2>
+  <p>
+    <a href="https://root-baoweisports.com">宝威体育</a> 是一个以体育内容为核心的线上信息平台。这里汇集了多种运动项目的基本资料、赛事信息整理以及运动常识。无论你关注的是球类运动、田径还是户外项目，都可以在此找到结构化的参考内容。
+  </p>
+  <p>
+    平台致力于以清晰、直白的方式呈现体育相关信息，帮助用户快速建立对某项运动或赛事的初步认知。内容均基于公开资料与常规知识整理，不包含任何形式的预测或诱导性表述。
+  </p>
+
+  <!-- 特点 / 信息组织方式 -->
+  <h2>信息组织特点</h2>
+  <div class="info-card" style="padding-top: 1.2rem;">
+    <ul style="padding-left: 1.2rem; list-style: disc;">
+      <li><strong>分类索引</strong> —— 运动项目、赛事阶段、基础规则等按类别列出，方便定位。</li>
+      <li><strong>说明性文档</strong> —— 每项内容均以“是什么 / 基本规则 / 常见术语”结构展开，不掺杂主观评价。</li>
+      <li><strong>持续更新</strong> —— 根据公开信息变化进行补充与修订，保持内容时效性。</li>
+      <li><strong>无广告干扰</strong> —— 页面保持简洁，专注于知识本身。</li>
+    </ul>
+  </div>
+
+  <!-- 场景 / 适合哪些人 -->
+  <h2>常见使用场景</h2>
+  <p>
+    如果你是刚开始接触某项运动的爱好者，或者需要快速了解某个赛事的基本背景，<a href="https://root-baoweisports.com">宝威体育</a> 的整理内容可以作为一个起点。例如：
+  </p>
+  <div class="dir-grid" style="margin-top: 0.6rem;">
+    <div class="dir-item">
+      <div class="label">⚽ 球类规则速查</div>
+      <div class="desc">足球、篮球、网球等基础规则与术语</div>
+    </div>
+    <div class="dir-item">
+      <div class="label">🏃 田径与户外</div>
+      <div class="desc">马拉松、越野、骑行等常识与装备简述</div>
+    </div>
+    <div class="dir-item">
+      <div class="label">📅 赛事信息</div>
+      <div class="desc">主要联赛、杯赛的赛制与时间特点</div>
+    </div>
+    <div class="dir-item">
+      <div class="label">📚 名词解释</div>
+      <div class="desc">体育统计、战术术语等简明说明</div>
+    </div>
+  </div>
+
+  <!-- 提示区 -->
+  <div class="notice-block">
+    <strong style="display: block; font-weight: 550; margin-bottom: 0.2rem;">📎 使用提示</strong>
+    <p style="margin-bottom: 0.2rem;">
+      所有内容均基于公开信息整理，仅供参考。体育规则、赛事安排可能随主办方调整而发生变化，建议结合官方渠道进一步确认。本页不包含任何形式的投资、竞猜或预测建议。
+    </p>
+  </div>
+
+  <!-- FAQ 摘要 -->
+  <h2>简短 FAQ</h2>
+  <div class="faq-item">
+    <strong>Q: 宝威体育的内容更新频率如何？</strong>
+    <p>根据体育赛季和规则变动不定期更新，重大调整时会同步补充说明。</p>
+  </div>
+  <div class="faq-item">
+    <strong>Q: 是否包含实时比分或数据？</strong>
+    <p>本知识库以静态说明为主，不提供实时数据流。如需实时信息，可参考赛事官方渠道。</p>
+  </div>
+  <div class="faq-item">
+    <strong>Q: 内容是否支持转载或引用？</strong>
+    <p>基本知识性内容欢迎合理引用，但请注明出处为 <a href="https://root-baoweisports.com">宝威体育</a>，且不得歪曲原意。</p>
+  </div>
+
+  <!-- 相关信息区 -->
+  <h2>相关信息</h2>
+  <p>
+    除了本知识索引页，<a href="https://root-baoweisports.com">宝威体育</a> 还设有专题页面，针对特定运动或赛事进行更细致的介绍。你可以根据兴趣选择阅读。建议搭配运动类书籍或官方规则文档一起使用，以获得更全面的理解。
+  </p>
+  <p>
+    我们始终坚持平实、克制的信息呈现方式，不渲染情绪，不夸大用途。希望每一位访问者都能在这里高效找到自己需要的体育知识片段。
+  </p>
+
+  <hr>
+  <div class="footer-note">
+    宝威体育 · 知识库 · 内容仅供学习与参考<br>
+    页面版本 2025 · 不构成任何专业建议
+  </div>
+
+</div>
+</body>
+</html>
